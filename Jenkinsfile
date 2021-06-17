@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat 'java -jar target/${NAME}-${VERSION}.jar'
+                bat 'java -jar C:\Users\Vishal Bansal\${NAME}-${VERSION}.jar'
             }
         }
     }
