@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat './scripts/deliver.sh'
+                bat 'java -jar target/${NAME}-${VERSION}.jar'
             }
         }
     }
